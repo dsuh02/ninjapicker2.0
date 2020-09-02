@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Name Picker</title>
+	<script type="text/javascript" src="jquery-1.8.0.min.js"></script>
+	<script src = 'jquery-ui-1.8.23.custom.min.js'></script>
+	<script type="text/javascript" src="names.js"></script>
+	<script type="text/javascript" src="raffle.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="raffle.css">
+</head>
+<body>
+	<div class="header">
+		<span>COVID HACKS 2020 RAFFLE -<b></b></span>
+		<span>Participants:<b id="participant-number"></b></span>
+	</div>
+	<img src="hackathonlogobeige0.png" alt="logo" style= "position:absolute; top:0px; right:100px;width:80px;height:80px;">
+	<div class='enter-names'>
+		<p style="color:#decdc3">Enter participants:</p>
+		<textarea class='name-text-field'></textarea>
+		<input id="remove-winners-input" type="checkbox" onclick="toggleRemoveWinners();" checked="checked"/><label style="color:#decdc3;" for="remove-winners-input">Remove winners after drawing</label>
+		<button style="background-color:#decdc3;" onclick="process();">Good luck!</button>
+	</div>
+</body>
+</html>
